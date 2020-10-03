@@ -30,8 +30,12 @@ print("Accuracy:")
 print(accuracy_score(y_true, ymeans))
 print() #Formatting
 
-    #The accuracy fluctuates between ~0% and ~50% 
-    #Averaging ~17%-25% on 100 trials
+    #The accuracy fluctuates between 0%, 25%, 50%, 75%, and 100% 
+    #This seems to be becuase of a labeling issue. Upon printing and 
+    #comparing ymeans and y_true, We see the groups are simply mislabeled as a whole in ymeans.
+    #If they were to be matched up to the proper label in y_true, there would be 
+    #an accuracy of 100%. As shown in the confusion matrix. We see that 
+    #all four groups have a full 75 datapoints.
 
 # TODO draw a confusion matrix
 
